@@ -1,0 +1,13 @@
+/* Reusable card styling */
+.custom-card {
+  background-color: #6d0913  !important;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.5);
+}
+
+/* Navbar active link behavior */
+.navbar-nav .nav-link:active {
+  color: #6c757d !important;
+  text-decoration: underline;
+}
