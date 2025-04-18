@@ -1,13 +1,92 @@
-/* Reusable card styling */
-.custom-card {
-  background-color: #6d0913  !important;
-  color: black;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 60, 0, 0.5);
+/* === Navbar Link Styling === */
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-/* Navbar active link behavior */
-.navbar-nav .nav-link:active {
-  color: #6c757d !important;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #ffcccc;
   text-decoration: underline;
+}
+
+.navbar-nav .nav-link:active {
+  color: #a9a9a9;
+  text-decoration: underline;
+}
+
+/* === Glowing Card Effects === */
+.card {
+  box-shadow: 0 0 15px crimson;
+  border-radius: 10px;
+  background-color: #6d0913;
+}
+
+/* === Registration Form Enhancements === */
+form label {
+  font-weight: bold;
+  color: #ffdddd;
+}
+
+form input,
+form select {
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+form input::placeholder {
+  color: #999;
+}
+
+/* === Submit Button Style === */
+button[type="submit"] {
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+  color: crimson;
+  box-shadow: 0 0 10px red;
+}
+
+/* === Table Header Styling === */
+.table thead th {
+  color: #ffeaea;
+  font-weight: bold;
+  background-color: #54070e;
+}
+
+/* === Table Wrapper for Background Match === */
+.table-responsive {
+  background-color: #6d0913;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px crimson;
+}
+
+/* === Custom Glowing Alert === */
+.custom-alert {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ff3c00;
+  font-family: 'Arial', sans-serif;
+  padding: 30px 40px;
+  border: 2px solid #ff3c00;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #ff3c00, 0 0 15px #ff0000;
+  text-align: center;
+  z-index: 9999;
+  display: none;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* === Responsive Container Padding Fix for Mobile === */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 60px;
+  }
 }
